@@ -7,7 +7,7 @@ This repository requires Python 3.8 or later.
 pip install -r requirements.txt
 ```
 ## Training & evaluation
-Simply use `run.py` file and pass the hyper-parameters, for example
+Simply use `run.py` file and pass the hyper-parameters,
 ```
 python run.py\
           --data_dir train_dataset.pkl\
@@ -16,4 +16,4 @@ python run.py\
           --num_epoch 8\
           --seed 902\
 ```
-Here we train on the preprocessed data file `train_dataset.pkl` and evaluate on `shared_task-test_set-final` by default, which is a 2020 shared task on COVID-19 event extraction.
+Here we train our model on the preprocessed data file `train_dataset.pkl` and evaluate on `shared_task-test_set-final`, which is a 2020 shared task on COVID-19 event extraction.
