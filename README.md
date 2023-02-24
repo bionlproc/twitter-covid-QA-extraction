@@ -20,7 +20,8 @@ Here we train our model on the preprocessed data file `train_dataset.pkl` and ev
 
 To see the usage of all arguments,
 ```
-usage: run.py [-h] --data_dir DATA_DIR [--train_batch_size TRAIN_BATCH_SIZE]
+usage: run.py [-h] --data_dir DATA_DIR --test_data_dir TEST_DATA_DIR
+              [--train_batch_size TRAIN_BATCH_SIZE]
               [--learning_rate LEARNING_RATE] [--num_epoch NUM_EPOCH]
               [--model MODEL] [--seed SEED] [--pre_seq_len PRE_SEQ_LEN]
               [--prefix_hidden_size PREFIX_HIDDEN_SIZE]
@@ -28,7 +29,9 @@ usage: run.py [-h] --data_dir DATA_DIR [--train_batch_size TRAIN_BATCH_SIZE]
 
 optional arguments:
   -h, --help            show this help message and exit
-  --data_dir DATA_DIR   path to the preprocessed dataset
+  --data_dir DATA_DIR   path to train dataset
+  --test_data_dir TEST_DATA_DIR
+                        path to test dataset
   --train_batch_size TRAIN_BATCH_SIZE
                         batch size during training
   --learning_rate LEARNING_RATE
