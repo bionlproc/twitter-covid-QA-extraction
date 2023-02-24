@@ -17,3 +17,30 @@ python run.py\
           --seed 902\
 ```
 Here we train our model on the preprocessed data file `train_dataset.pkl` and evaluate on `shared_task-test_set-final`, which is a 2020 shared task on COVID-19 event extraction.
+
+To see the usage of all arguments,
+```
+usage: run.py [-h] --data_dir DATA_DIR [--train_batch_size TRAIN_BATCH_SIZE]
+              [--learning_rate LEARNING_RATE] [--num_epoch NUM_EPOCH]
+              [--model MODEL] [--seed SEED] [--pre_seq_len PRE_SEQ_LEN]
+              [--prefix_hidden_size PREFIX_HIDDEN_SIZE]
+              [--output_dir OUTPUT_DIR]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --data_dir DATA_DIR   path to the preprocessed dataset
+  --train_batch_size TRAIN_BATCH_SIZE
+                        batch size during training
+  --learning_rate LEARNING_RATE
+                        learning rate for the RoBERTa encoder
+  --num_epoch NUM_EPOCH
+                        number of the training epochs
+  --model MODEL         the base model name (a huggingface model)
+  --seed SEED           the random seed
+  --pre_seq_len PRE_SEQ_LEN
+                        the length of prefix tokens
+  --prefix_hidden_size PREFIX_HIDDEN_SIZE
+                        the hidden size of prefix tokens
+  --output_dir OUTPUT_DIR
+                        output directory to store predictions
+```
