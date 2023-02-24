@@ -7,7 +7,7 @@ This repository requires Python 3.8 or later.
 pip install -r requirements.txt
 ```
 ## Training & evaluation
-Simply use `run.py` file
+Simply use `run.py` file,
 ```
 python run.py\
           --data_dir train_dataset.pkl\
