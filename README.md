@@ -6,6 +6,14 @@ This repository requires Python 3.8 or later.
 ```
 pip install -r requirements.txt
 ```
+## Dataset
+To obtain the original dataset, please see [Extracting COVID-19 Events from Twitter](https://github.com/viczong/extract_COVID19_events_from_Twitter).
+
+Then, preprocess the dataset to our desired format
+```
+python preprocess_dataset.py
+```
+
 ## Training & evaluation
 Here we train our model on the preprocessed data file `train_dataset.pkl` and evaluate on `shared_task-test_set-final`, which is a 2020 shared task on COVID-19 event extraction. Simply use `run.py` file,
 ```
@@ -44,12 +52,4 @@ optional arguments:
                         the hidden size of prefix tokens
   --output_dir OUTPUT_DIR
                         output directory to store predictions
-```
-
-## Dataset
-To obtain the original dataset, please see [Extracting COVID-19 Events from Twitter](https://github.com/viczong/extract_COVID19_events_from_Twitter).
-
-Then, preprocess the dataset to our desired format
-```
-python preprocess_dataset.py
 ```
