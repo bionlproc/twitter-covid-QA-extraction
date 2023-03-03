@@ -49,7 +49,7 @@ optional arguments:
 ## Dataset
 To obtain the original dataset, please see [Extracting COVID-19 Events from Twitter](https://github.com/viczong/extract_COVID19_events_from_Twitter).
 
-Preprocess the dataset to our desired format
+Then, preprocess the dataset to our desired format
 ```
 python preprocess_dataset.py
 ```
