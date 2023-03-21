@@ -53,3 +53,7 @@ optional arguments:
   --output_dir OUTPUT_DIR
                         output directory to store predictions
 ```
+
+## Our evaluation results for each event and subtask
+<img width="424" alt="image" src="https://user-images.githubusercontent.com/74789310/226658962-388d582a-5008-470a-ac03-c1f1146be8b4.png">
+
